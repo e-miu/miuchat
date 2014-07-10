@@ -1,14 +1,14 @@
 
-�Eserver.js
-�T�[�o�[���W���[��
+・server.js
+サーバーモジュール
 
-�EsocketRouter.js
-socket.io�̃��[�e�B���O����
-�N���C�A���g�N����̊e�탍�W�b�N�͂�����
+・socketRouter.js
+socket.ioのルーティング処理
+クライアント起動後の各種ロジックはここに
 
-�Edbschema.js
-MongoDB�ւ̐ڑ��Ƃ̃X�L�[�}��`
+・dbschema.js
+MongoDBへの接続とのスキーマ定義
 
-�Eview/
-�N���C�A���g�p�t�@�C���Q
+・view/
+クライアント用ファイル群
 
