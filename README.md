@@ -1,29 +1,14 @@
-# README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+・server.js
+サーバーモジュール
 
-### What is this repository for? ###
+・socketRouter.js
+socket.ioのルーティング処理
+クライアント起動後の各種ロジックはここに
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+・dbschema.js
+MongoDBへの接続とのスキーマ定義
 
-### How do I get set up? ###
+・view/
+クライアント用ファイル群
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
