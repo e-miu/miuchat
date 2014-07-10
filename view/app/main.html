@@ -1,0 +1,42 @@
+<div id="lcTop" data-dojo-type="dijit/layout/LayoutContainer" data-dojo-props="gutters:true">
+	<!-- ユーザーリスト部 -->
+	<div id="cpUserlist" class="lcChild1" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'left'">
+		<div id="userInfo"></div>
+		<div id="userList">
+			<div id="userList_grid"></div>
+		</div>
+	</div>
+
+	<!-- チャット部 -->
+	<div id="lcChat" class="lcChild1" data-dojo-type="dijit/layout/LayoutContainer" data-dojo-props="region:'center', grutters:true">
+		<div id="cpChatForm" class="lcChild2" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+			<input id="tbxChatInput" data-dojo-type="dijit/form/TextBox" style="width: 350px;">
+			<button id="btnChatSubmit" data-dojo-type="dijit/form/Button" data-dojo-props="showLabel:true, label:'発言する'"></button>
+		</div>
+		<div id="cpChatMessage" class="lcChild2" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'"></div>
+	</div>
+
+	<!-- ゲーム部 -->
+	<div id="lcGame" class="lcChild1" data-dojo-type="dijit/layout/LayoutContainer" data-dojo-props="region:'right', grutters:true">
+		<div id="cpGameBoard" class="lcChild2" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'"></div>
+		<div id="cpGameInfo" class="lcChild2" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+			<button id="btnStartGame" data-dojo-type="dijit/form/Button" data-dojo-props="showLabel:true, label:'やる！'"></button>
+			<div style="margin-top: 10px;">
+				<div><span id="spGameMessage"></span></div>
+				<div><span id="spTurnMessage" style="color: #8888ee;"></span></div>	<!-- 対戦者のみ表示する -->
+				<table id="tblGameMember">
+					<tr>
+						<td>○: </td>
+						<td><div id="gameWho1" class="packInto"></div></td>
+						<td id="gameResult1"></td>
+					</tr>
+					<tr>
+						<td>×: </td>
+						<td><div id="gameWho2" class="packInto"></div></td>
+						<td id="gameResult2"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

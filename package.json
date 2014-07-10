@@ -1,0 +1,21 @@
+{
+  "name": "miuchat",
+  "version": "0.0.0",
+  "description": "miu chat app",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.4.1",
+    "mongoose": "^3.8.12",
+    "socket.io": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "miu",
+  "subdomain": "miuchat",
+  "engines": {
+    "node": "0.10.x"
+  }
+}

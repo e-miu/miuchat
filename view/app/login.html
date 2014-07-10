@@ -1,0 +1,39 @@
+<div id='tcLogin' data-dojo-type="dijit/layout/TabContainer">
+	<div id="cpLogin" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="selected:true" title="ログインする">
+		<div>
+			<label>name: </label>
+			<input id="tbxLoginName"
+				data-dojo-type="dijit/form/ValidationTextBox"
+				data-dojo-props="regExp:'[a-zA-Z0-9]*', invalidMessage:'半角英数字のみ', tooltipPosition:['below-centered', 'above-centered', 'after-centered']">
+		</div>
+		<div>
+			<label>password: </label>
+			<input id="tbxLoginPassword"
+				type="password"
+				data-dojo-type="dijit/form/ValidationTextBox"
+				data-dojo-props="regExp:'[a-zA-Z0-9]*', invalidMessage:'半角英数字のみ', tooltipPosition:['below-centered', 'above-centered', 'after-centered']">
+		</div>
+		<button id="btnLoginSubmit" data-dojo-type="dijit/form/Button" data-dojo-props="showLabel:true, label:'入る'"></button>
+		<div id='divLoginMessage' style="display: none;"></div>
+	</div>
+	<div id="cpCreateUser" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="" title="ユーザーを作る">
+		<div>
+			<label>name: </label>
+			<input id="tbxCreateName"
+				data-dojo-type="dijit/form/ValidationTextBox"
+				data-dojo-props="regExp:'[a-zA-Z0-9]*', invalidMessage:'半角英数字のみ', tooltipPosition:['below-centered', 'above-centered', 'after-centered']">
+		</div>
+		<div>
+			<label>password: </label>
+			<input id="tbxCreatePassword"
+				type="password"
+				data-dojo-type="dijit/form/ValidationTextBox"
+				data-dojo-props="regExp:'[a-zA-Z0-9]*', invalidMessage:'半角英数字のみ', tooltipPosition:['below-centered', 'above-centered', 'after-centered']">
+		</div>
+		<button id="btnCreateSubmit" data-dojo-type="dijit/form/Button" data-dojo-props="showLabel:true, label:'ユーザー登録して入る'"></button>
+		<div id='divCreateMessage' style="display: none;"></div>
+	</div>
+	<div data-dojo-type="dijit/Dialog" data-dojo-props="duration:300, draggable:false" data-dojo-id="dlgAlert">
+		<div class="dijitDialogPaneContentArea"></div>
+	</div>
+</div>

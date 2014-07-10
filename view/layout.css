@@ -1,0 +1,160 @@
+
+/*
+ * 全体
+ */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.packInto {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;	/* Safari */
+	-o-text-overflow: ellipsis;	/* Opera */
+	word-wrap: normal;	/* for IE9, IE10 */
+}
+
+.lcChild1,
+.lcChild2 {
+	padding: 0 !important;
+}
+
+/*
+ * ログイン画面
+ */
+#tcLogin {
+	margin: 10px 0px 0px 0px;
+	height: 100%;
+}
+
+#cpLogin div,
+#cpCreateUser div {
+	margin: 3px;
+}
+
+/*
+ * メイントップ
+ */
+#lcTop {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    min-width: 900px;
+}
+
+/*
+ * ユーザーリスト部
+ */
+#cpUserlist {
+    width: 200px;
+    overflow: hidden;
+	border-right: 1px solid #cccccc;
+}
+
+#userInfo {
+	margin: 10px 5px 5px 5px;
+	font-size: 1.2em;
+}
+
+#userList {
+	height: 100%;
+	margin: 20px 0px 0px 0px;
+	border-top: 1px solid #dcdcdc;
+}
+
+.users {
+	margin-top: 5px;
+}
+
+#userList_grid .dojoxGridHeader {
+	display: none;
+}
+
+#userList .dojoxGrid,
+#userList_grid .dojoxGridCell,
+#userList_grid .dojoxGridCellFocus {
+	border: none !important;
+}
+
+/*
+ * チャット部
+ */
+#lcChat {
+    width: 100%;
+    min-width: 400px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+#cpChatForm  {
+	width: 100%;
+	overflow: hidden;
+	margin: 15px 0px 20px 0px;
+}
+
+#cpChatForm div {
+	margin: 3px;
+}
+
+#btnChatSubmit {
+}
+
+#cpChatMessage {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.chatMessage {
+	width: 100%;
+	margin-top: 10px;
+}
+
+/*
+ * ゲーム部
+ */
+#lcGame {
+    width: 200px;
+    margin-left: 15px;
+}
+
+#cpGameBoard {
+    width: 100%;
+    height: 180px;
+    margin: 10px;
+}
+
+#cpGameInfo {
+    height: 100%;
+    margin: 10px;
+}
+
+#spGameMessage {
+	/*display: none;*/
+}
+
+#tblGameMember {
+	/*display: none;*/
+}
+
+#gameWho1,
+#gameWho2 {
+	width: 80px;
+}
+
+#spTurnMessage {
+	/*display: none;*/
+}
+#tblGameMember {
+	margin-top: 5px;
+}
+
+#tblGameMember * {
+	font-size: 1.1em;
+}
+
